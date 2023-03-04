@@ -17,6 +17,7 @@ This is a wrapper module that provides the desired function through the use case
 #### Release Note
 
 - 2023/03/03: Initialized react-native-ble-manager-wrapper project source code.
+- 2023/03/04: Added utility sources (BLE, Alert, Common, Logger, Permission, Storage, Theme and Toast) - Not completed yet, Under construction.
 
 #### How To Setup Environment
 
