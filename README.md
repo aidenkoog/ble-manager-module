@@ -25,7 +25,7 @@ It's mandantory to set up the development environment and build the app by follo
 
 - Visit https://reactnative.dev/docs/environment-setup
 - Install Node, Brew, Yarn, Npm etc packages
-- npx create-react-app react-native-ble-manager-wrapper --template typescript
+- npx react-native init PROJECT_NAME --template react-native-template-typescript
 - Set-up Android SDK path
 - pod install
 - Open iOS app project with Xcode IDE
