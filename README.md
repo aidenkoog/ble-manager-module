@@ -18,6 +18,7 @@ This is a wrapper module that provides the desired function through the use case
 
 - 2023/03/03: Initialized react-native-ble-manager-wrapper project source code.
 - 2023/03/04: Added utility sources (BLE, Alert, Common, Logger, Permission, Storage, Theme and Toast) - Not completed yet, Under construction.
+- 2023/03/06: Deleted previous project source code.
 
 #### How To Setup Environment
 
@@ -39,26 +40,21 @@ It's mandantory to set up the development environment and build the app by follo
 - pod install
 - Clean & Re-build ios project
 - Set-up Team account about Cocoapods AccessibilityReources
-- npx react-native run-ios
-- brew install ruby
-- sudo gem install fastlane
-- sudo gem install bundler
-- bundle init
-- Write 'gem "fastlane"' to Gemfile
-- cd ios
-- fastlane init
-- When occurring error Failed to build iOS project. We ran "xcodebuild" command.. ?
+- When this error occurs, (Failed to build iOS project. We ran "xcodebuild" command.. ?)
   - Execute command, rm -rf /Users/admin/Library/Developer/Xcode/DerivedData
   - Execute Xcode
   - Check if DerivedData directory is made again.
   - Execute command, npm run ios again.
-- When occurring this error in Xcode, error build: Command PhaseScriptExecution failed with a nonzero exit code
+- When this error happens in Xcode, (error build: Command PhaseScriptExecution failed with a nonzero exit code)
   - sudo ln -s "$(which node)" /usr/local/bin/node
   - CMD + K: Clean Build
   - CMD + Shift + B : Build
   - npm run ios
   - Change package.json's ios setting: // "ios": "react-native run-ios", ==> "ios": "react-native run-ios --device='AidenKooG'",
   - Please check if mobile phone's developer mode is turned on.
+- If encountering this error, cannot find ruby 2.7.6.. when you create new project ?
+  - rbenv install 2.7.6
+  - npx react-native init PROJECT_NAME --template react-native-template-typescript
 
 #### BLE Configuration
 
