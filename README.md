@@ -7,12 +7,36 @@ This is a wrapper module that provides the desired function through the use case
 - Language: Typescript
 - Structure Summary
   - ✨ assets
-  - ✨ configs
+    - ✨ Fonts
+    - ✨ Images
+    - ✨ Strings
   - ✨ data
+    - ✨ adapters
+    - ✨ repositories
+    - ✨ sources
   - ✨ domain
+    - ✨ entities
+    - ✨ usecases
   - ✨ presentation
+    - ✨ components
+    - ✨ containers
+    - ✨ stylesheets
   - ✨ test
+    - ✨ data
+    - ✨ hidden_menu
+      - ✨ home
+      - ✨ splash
   - ✨ utils
+    - ✨ alert
+    - ✨ ble
+    - ✨ common
+    - ✨ logger
+    - ✨ navigation
+    - ✨ permission
+    - ✨ storage
+    - ✨ theme
+    - ✨ time
+    - ✨ toast
 
 #### Release Note
 
@@ -21,6 +45,7 @@ This is a wrapper module that provides the desired function through the use case
 - 2023/03/07: Deleted previous project source code.
 - 2023/03/07: Created react-native typescript project again.
 - 2023/03/07: Added source directory's hierarchy.
+- 2023/03/07: Update full source code written by typescript. Enable ble module + usecase + repository + test hidden menu ui.
 
 #### How To Setup Environment
 
@@ -29,6 +54,7 @@ It's mandantory to set up the development environment and build the app by follo
 - Visit https://reactnative.dev/docs/environment-setup
 - Install Node, Brew, Yarn, Npm etc packages
 - npx react-native init PROJECT_NAME --template react-native-template-typescript
+  - npx react-native init PROJECT_NAME <-- Language: Javascript.
 - Set-up Android SDK path
 - pod install
 - Open iOS app project with Xcode IDE
@@ -72,6 +98,7 @@ export const FLOW_CONTROL_CHARACTERISTIC_UUID = ''
 export const BATTERY_SERVICE_UUID = ''
 export const BATTERY_CHARACTERISTIC_UUID = ''
 
+// Please turn on BLE_TEST_MODE as true and describe your device name or mac address to make your device discovered.
 export const BLE_TEST_MODE = false
 export const BLE_TEST_DEVICE_NAME = ""
 export const BLE_TEST_DEVICE_MAC_ADDRESS = ""
@@ -84,6 +111,26 @@ export const BLE_PAIRING_RESULT_SUCCESS = 0
 
 export const BLE_NOTIFICATION_SUFFIX = 0
 export const BLE_STATUS_INFO_SUFFIX = 0
+```
+
+Write permissions related to bluetooth.
+
+```sh
+// Android
+<uses-permission android:name="android.permission.BLUETOOTH"/>
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+<uses-feature
+    android:name="android.hardware.bluetooth_le"
+    android:required="false" />
+
+// iOS - ios/PROJECT_NAME/Info.plist
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Allow CareScend to access device&apos;s bluetooth</string>
+<key>NSBluetoothPeripheralUsageDescription</key>
+<string>Allow CareScend to access device&apos;s bluetooth</string>
 ```
 
 #### Source Code

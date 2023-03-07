@@ -12,6 +12,10 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+  <string>Allow app to access device&apos;s bluetooth</string>
+  <key>NSBluetoothPeripheralUsageDescription</key>
+  <string>Allow app to access device&apos;s bluetooth</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
