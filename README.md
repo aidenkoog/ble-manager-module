@@ -1,4 +1,4 @@
-## Ble Manager module
+## Beautiful BLE Manager module
 
 #### Continue to study and ponder to improve the code structure.
 
