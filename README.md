@@ -1,4 +1,4 @@
-## React-Native-Ble-Manager-Wrapper
+## Ble Manager module
 
 #### Continue to study and ponder to improve the code structure.
 
