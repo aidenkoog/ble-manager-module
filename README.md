@@ -46,6 +46,7 @@ This is a wrapper module that provides the desired function through the use case
 - 2023/03/07: Created react-native typescript project again.
 - 2023/03/07: Added source directory's hierarchy.
 - 2023/03/07: Update full source code written by typescript. Enable ble module + usecase + repository + test hidden menu ui.
+- 2023/03/08: Fix string resources directory has wrong path.
 
 #### How To Setup Environment
 
